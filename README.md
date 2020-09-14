@@ -28,7 +28,7 @@ import pandas as pd
 
 
 ```python
-gapi = Guardian_API()
+gapi = GuardianAPI()
 ```
 
     api_key: ········
