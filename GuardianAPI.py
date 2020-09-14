@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-## The Guardian ""
 import requests
 from requests_toolbelt import sessions
 from requests.adapters import HTTPAdapter
@@ -22,11 +21,12 @@ class GuardianAPI:
     def get_content(self, parameters):
         response = self.endpoint.get("/search", params = parameters, headers = {'api-key':self.api_key,
                                                                                 'format':'json'})
+        response_json = json.loads(response.text)
+        
         if response.status_code != 200:
             raise Exception('API Error; status_code:{}, status:{}'.format(response.status_code, response.text))
-        
 
-        response_json = json.loads(response.text)                
+         
         all_results = []
         all_results.extend(response_json["response"]["results"])
         npages = response_json["response"]["pages"]
