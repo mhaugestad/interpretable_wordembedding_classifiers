@@ -22,7 +22,7 @@ We firstly, need to get our data. The Guardian has a really good API for this pu
 
 
 ```python
-from GuardianAPI import Guardian_API
+from GuardianAPI import GuardianAPI
 import pandas as pd
 ```
 
