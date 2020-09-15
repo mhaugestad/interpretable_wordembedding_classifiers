@@ -1,11 +1,11 @@
 # Interpretable Wordembedding Classifiers
 
 ## Introduction
-Wordembeddings can be increadibly useful as features in classification models. Unlike bag-of-words approaches, wordembeddings can capture semantic relationships between words, and are fairly light compared embeddings from more complex models like ELMO and BERT.
+Wordembeddings can be increadibly useful as features in classification models. Word embeddings are dense low dimensional representations of words, and are created in such a way that words used in similar context receive a similar mathematical representation. Unlike bag-of-words approaches, wordembeddings can capture semantic relationships between words and are fairly light-weight compared to embeddings from more complex models like ELMO and BERT.
 
-Despite its usefulness and high performance, wordembeddings can often be difficult to use in classification tasks where it is vital that researchers are able to explain the data generating process, not just provide an accurate prediction. The embeddings are in and of themselves not interpretable, and therefore researchers often shy away from using them.
+Despite their usefulness and high performance, wordembeddings can often be difficult to use in classification tasks where it is vital that researchers are able to explain the data generating process, not just provide an accurate prediction. The dimensions of the word embeddings are in and of themselves not interpretable, and therefore researchers often shy away from using them.
 
-In this notebook I will present a simple as to how to how we can add interpretability to classifier models based on word embeddings, and a simple process for working our way back from predictions made by a classifier that takes wordembeddings as input to individual words or terms that the model seem to be using to discriminate your classes.
+In this notebook I will present a simple framework to add interpretability to classifier models based on word embeddings, and a simple process for working our way back from predictions made by a classifier that takes wordembeddings as input to individual words or terms that the model seem to be using to discriminate your classes.
 
 The approach can fairly simply be summarised as follows:
 
