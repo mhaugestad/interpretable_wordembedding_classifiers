@@ -494,7 +494,7 @@ distance_df.sort_values('distance', ascending = True).head(10)
 
 
 
-We can look at words that are close to the decision boundary. Here we find as hypothesised a set of words that are either not associated with either politics or sports, like *when* or *talking*, or associated with both, like *defence* or *hamilton (both formula one driver and name of several politicians*.
+We can look at words that are close to the decision boundary. Here we find as hypothesised a set of words that are either not associated with either politics or sports, like *credentials* or *barrles*, or associated with both, like *appeal* or *affected*.
 
 
 ```python
